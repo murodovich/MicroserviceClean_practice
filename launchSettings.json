@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "getaway.api": "StartDebugging",
+        "najotnur.api": "StartDebugging"
+      }
+    }
+  }
+}
