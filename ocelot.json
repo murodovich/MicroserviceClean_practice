@@ -1,0 +1,67 @@
+{
+  "Routes": [
+    //UserController
+    {
+      "UpstreamPathTemplate": "/api/User/UserGetAll",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "authenticationwebapi",
+          "Port": 80
+        }
+      ],
+      "DownstreamPathTemplate": "/api/User/UserGetAll"
+    },
+    {
+      "UpstreamPathTemplate": "/api/User/UserCreate",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "authenticationwebapi",
+          "Port": 80
+        }
+      ],
+      "DownstreamPathTemplate": "/api/User/UserCreate"
+    },
+    {
+      "UpstreamPathTemplate": "/api/User/UserGetById",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "authenticationwebapi",
+          "Port": 80
+        }
+      ],
+      "DownstreamPathTemplate": "/api/User/UserGetById"
+    },
+    {
+      "UpstreamPathTemplate": "/api/User/UserUpdate",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "authenticationwebapi",
+          "Port": 80
+        }
+      ],
+      "DownstreamPathTemplate": "/api/User/UserUpdate"
+    },
+    {
+      "UpstreamPathTemplate": "/api/User/UserDelete",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "authenticationwebapi",
+          "Port": 80
+        }
+      ],
+      "DownstreamPathTemplate": "/api/User/UserDelete"
+    }
+
+
+  ]
+} 
