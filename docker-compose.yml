@@ -2,12 +2,15 @@ version: '3.4'
 
 services:
   sqldata:
-    image: mcr.microsoft.com/mssql/server:2019-latest
+    volumes:
+    - ./db:/var/opt/mssql/data
+    image:  mcr.microsoft.com/mssql/server:2019-latest
     environment:
       - SA_PASSWORD=luboy#2022
       - ACCEPT_EULA=Y
     ports:
-      - 9090:80
+      - 8080:43
+
 
   getaway.api:
     image: ${DOCKER_REGISTRY-}getawayapi
