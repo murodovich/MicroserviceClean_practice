@@ -7,6 +7,7 @@ namespace NajotNur.Application.Data
     {
         public NajotNurDBContext(DbContextOptions<NajotNurDBContext> options) : base(options)
         {
+            Database.Migrate();
             
         }
          
