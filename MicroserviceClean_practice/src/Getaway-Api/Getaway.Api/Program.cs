@@ -22,13 +22,6 @@ var app = builder.Build();
     app.UseSwaggerUI();
 
 
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-
-app.MapControllers();
-
 await app.UseOcelot();
 
 
